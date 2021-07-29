@@ -1,3 +1,20 @@
+Metadata-Version: 2.1
+Name: pyreality
+Version: 0.0.5
+Summary: Create mixed reality visualisations in Jupyter Notebooks
+Home-page: https://github.com/tashfeenahmed/pyreality
+Author: Tashfeen Ahmed
+Author-email: tashfene@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tashfeenahmed/pyreality/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # pyReality
 
 Create mixed reality visualisations in Jupyter Notebooks
@@ -18,7 +35,7 @@ The easiest way to get started is to install the package in your Jupyter Noteboo
 Once installed, you can include visualisation funtions using the following command:
 
 ```python
-from pyreality import pyreality as pyr
+from pyreality import pyRealityBar, pyRealityScatter, pyRealityPlot, pyRealityScatterPro
 ```
 
 ## Create Visualisations
@@ -34,7 +51,7 @@ With the current version of pyReality you can create the following types of visu
 The immersive scatterplot is based on BabylonJs, performant and has an immserive AR component that lets you view the data visualisation in your surroundings. The immersive scatterplot can be created using the following command:
 
 ```python
-pyr.pyRealityImmersiveScatter(df, title, color, size)
+pyRealityImmersiveScatter(df, title, color, size)
 ```
 
 Parameter | Description
@@ -52,7 +69,7 @@ import pandas as pd # To open CSV
 
 df = pd.read_csv("./yearly_data.csv") # The CSV is structured as year,t1,t2,t3,t4,t5,t6 e.g. row 1: 2017,29,29,28,27,27,26,26,26 
 
-pyr.pyRealityImmersiveScatter(df, "Yearly Data", "red", 2)
+pyRealityImmersiveScatter(df, "Yearly Data", "red", 2)
 
 ```
 
@@ -61,7 +78,7 @@ pyr.pyRealityImmersiveScatter(df, "Yearly Data", "red", 2)
 The 3D bar chart can be created using the following command:
 
 ```python
-pyr.pyRealityBar(df, title, encodingX, encodingY, encodingZ, encodingColor)
+pyRealityBar(df, title, encodingX, encodingY, encodingZ, encodingColor)
 ```
 
 Parameter | Description
@@ -76,7 +93,7 @@ encodingColor | Dictionary with field, type, scale, legend, numberFormat
 Here is an example code to create a 3D bar graph using pyReality:
 
 ```python
-from pyreality import pyreality as pyr
+from pyreality import pyRealityBar
 import pandas as pd # To process the data
 
 df = pd.read_csv("./vax.csv") # The CSV is structured as Entity,Code,Day,total_vaccinations e.g. Argentina,ARG,2021-03-11,1919074
@@ -123,7 +140,7 @@ encodingColor = {
     "numberFormat": ",.2r"
 }
 
-pyr.pyRealityBar(dfCountries, "Vaccinations", encodingX, encodingY, encodingZ, encodingColor)
+pyRealityBar(dfCountries, "Vaccinations", encodingX, encodingY, encodingZ, encodingColor)
 
 ```
 
@@ -133,7 +150,7 @@ The 3D scatterplot can be created using the following command:
 
 
 ```python
-pyr.pyRealityScatter(df, title, encodingX, encodingY, encodingZ, encodingColor)
+pyRealityScatter(df, title, encodingX, encodingY, encodingZ, encodingColor)
 ```
 
 Parameter | Description
@@ -148,7 +165,7 @@ encodingColor | Dictionary with field, type, scale, legend, numberFormat
 Here is an example code to create a 3D bar graph using pyReality:
 
 ```python
-from pyreality import pyreality as pyr
+from pyreality import pyRealityScatter
 import pandas as pd # To process the data
 
 df = pd.read_csv("./vax.csv") # The CSV is structured as Entity,Code,Day,total_vaccinations e.g. Argentina,ARG,2021-03-11,1919074
@@ -195,6 +212,8 @@ encodingColor = {
     "numberFormat": ",.2r"
 }
 
-pyr.pyRealityScatter(dfCountries, "Vaccinations", encodingX, encodingY, encodingZ, encodingColor)
+pyRealityScatter(dfCountries, "Vaccinations", encodingX, encodingY, encodingZ, encodingColor)
 
 ```
+
+
