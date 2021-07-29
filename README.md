@@ -29,10 +29,36 @@ With the current version of pyReality you can create the following types of visu
 2. 3D Bar Chart
 3. 3D Scatterplot
 
+### Immersive 3D Scatterplot
+
+The immersive scatterplot is based on BabylonJs, performant and has an immserive AR component that lets you view the data visualisation in your surroundings. The immersive scatterplot can be created using the following command:
+
+```python
+pyRealityImmersiveScatter(df, title, color, size)
+```
+
+Parameter | Description
+--- | ---
+df | The dataframe containing input data
+title | Title for the visualisation and data visualisation
+color | One of the three colors i.e. `red`, `green`, `blue`
+size | You can optionally assign a size (<4). Default is 2.
+
+Here is an example code to create a immersive scatterplot using pyReality:
+
+```python
+from pyreality import pyRealityImmersiveScatter
+import pandas as pd # To open CSV
+
+df = pd.read_csv("./yearly_data.csv") # The CSV is structured as year,t1,t2,t3,t4,t5,t6 e.g. row 1: 2017,29,29,28,27,27,26,26,26 
+
+pyRealityImmersiveScatter(df, "Yearly Data", "red", 2)
+
+```
+
 ### 3D Bar Chart
 
 The 3D bar chart can be created using the following command:
-
 
 ```python
 pyRealityBar(df, title, encodingX, encodingY, encodingZ, encodingColor)
