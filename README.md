@@ -198,3 +198,10 @@ encodingColor = {
 pyr.pyRealityScatter(dfCountries, "Vaccinations", encodingX, encodingY, encodingZ, encodingColor)
 
 ```
+
+## Team
+pyReality is in ongoing development by the Design Informatics Group at the University of Edinburgh, UK, led by [Dr Benjamin Bach](https://visualinteractivedata.github.io/), [Dr Bettina Nissen](http://data-things.com/) and [Tashfeen Ahmed](https://tashfeen.me).
+
+## License
+
+MIT © Copyright 2021 [Dr Benjamin Bach](https://visualinteractivedata.github.io/), [Dr Bettina Nissen](http://data-things.com/) and [Tashfeen Ahmed](https://tashfeen.me) - University of Edinburgh, UK (Design Informatics Group) - All rights reserved
