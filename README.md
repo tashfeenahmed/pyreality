@@ -1,6 +1,10 @@
-# pyReality
+[<img width="392" height="82" src="http://pyreality.co/assets/images/pyreality-logo.png" />](https://pyreality.co)
 
-Create mixed reality visualisations in Jupyter Notebooks
+[![PyPI version](https://badge.fury.io/py/pyreality.svg)](https://badge.fury.io/py/pyreality) 
+
+Create mixed reality visualisations in Jupyter Notebooks. Check out our [home page](https://pyreality.co) for more information.
+
+[<img align="center" src="https://pyreality.co/assets/images/jupyter.png" />](https://pyreality.co)
 
 ## Rapid Mixed Reality Visualisations
 
