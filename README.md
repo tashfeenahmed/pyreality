@@ -1,6 +1,6 @@
 [<img width="392" height="82" src="http://pyreality.co/assets/images/pyreality-logo.png" />](https://pyreality.co)
 
-[![PyPI version](https://badge.fury.io/py/pyreality.svg)](https://badge.fury.io/py/pyreality) 
+[![PyPI version](https://badge.fury.io/py/pyreality.svg)](https://badge.fury.io/py/pyreality) [![LICENSE](https://img.shields.io/github/license/tashfeenahmed/pyreality?color=blue)](https://github.com/tashfeenahmed/pyreality/blob/master/LICENSE)
 
 Create mixed reality visualisations in Jupyter Notebooks. Check out our [home page](https://pyreality.co) for more information.
 
